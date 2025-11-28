@@ -1,7 +1,7 @@
 package dev.java10x.CadastroNinja.Ninjas;
 
 import jakarta.persistence.*;
-import dev.java10x.CadastroNinja.Missoes.MissoesModel;
+import dev.java10x.CadastroNinja.Missoes.MissaoModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,6 +27,6 @@ public class NinjaModel {
     // Muitos ninjas para uma missão
     @ManyToOne
     @JoinColumn(name = "missao_id")
-    private MissoesModel missao;
+    private MissaoModel missao;
 
 }
